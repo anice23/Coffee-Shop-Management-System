@@ -1,0 +1,41 @@
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]rtifacts/
+TestResults/
+
+# IDE files
+.idea/
+.vscode/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Local environment secrets
+.env
+.env.*
+!.env.example
+
+# Local database files
+*.mdf
+*.ldf
+
+# Publish output
+publish/
+# Local database configuration
+appsettings.json
+appsettings.*.json
+!appsettings.example.json
