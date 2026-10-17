@@ -1,72 +1,194 @@
+# ☕ Coffee Shop Management System
 
-# Coffee Shop Management System
+### 🚀 A Smart Desktop Solution for Modern Coffee Shops
 
-A desktop application developed with C# and .NET 8 to help coffee shops manage their daily operations.
+A feature-rich coffee shop management application built with **C# · .NET 8 · Windows Forms · Entity Framework Core · SQL Server**.
 
-## Overview
+🎯 Designed to simplify daily café operations through sales management, inventory tracking, user administration, reporting, and receipt printing.
 
-Coffee Shop Management System provides a centralized interface for managing products, categories, users, orders, inventory, sales reports, and café settings.
+---
 
-The project was built to practise layered architecture, database integrity, asynchronous programming, and maintainable application design.
+## 📸 About the Project
 
-## Features
+Coffee Shop Management System is a desktop application developed to manage the essential operations of a coffee shop from one centralized interface.
 
-- **Dashboard:** Sales statistics, recent orders, low-stock alerts, and revenue charts.
-- **Point of Sale (POS):** Product search, category filtering, shopping cart, checkout confirmation, and stock validation.
-- **Product Management:** Add, edit, search, deactivate, and restore products, including product images.
-- **Category Management:** Create, edit, search, deactivate, and restore categories.
-- **User Management:** Admin and Cashier roles with BCrypt password hashing.
-- **Order Management:** Order history, date and payment filters, and order details.
-- **Reports:** Revenue summaries, payment analysis, best-selling products, and CSV export.
-- **Receipt Printing:** Printable receipts with configurable café information.
-- **Settings:** Café details, receipt footer, and low-stock threshold.
-- **Data Integrity:** Entity Framework Core, SQL Server, asynchronous database operations, and transactional checkout.
+The project focuses on **clean architecture, reliable data handling, asynchronous database operations, and a user-friendly experience**.
 
-## Technologies
+## ✨ Key Features
 
-- C#
-- .NET 8
-- Windows Forms
-- Entity Framework Core 8
-- Microsoft SQL Server
-- LINQ
-- Async / Await
-- Git and GitHub
+### 📊 Dashboard
+- 💰 Revenue and sales statistics
+- 🧾 Recent orders overview
+- 📉 Low-stock alerts
+- 📈 Daily revenue chart
 
-## Architecture
+### 🛒 Point of Sale (POS)
+- 🔎 Search products by name
+- 🗂️ Filter products by category
+- 🛍️ Shopping cart management
+- 💳 Cash and card payment methods
+- 📦 Stock validation during checkout
+- 🔄 Transaction-based order creation
 
-The solution is organized into three main projects:
+### ☕ Product Management
+- ➕ Add new products
+- ✏️ Update product information
+- 🖼️ Upload and manage product images
+- 🔍 Search and filter products
+- ♻️ Soft delete and restore products
+
+### 🗂️ Category Management
+- ➕ Create and edit categories
+- 🔎 Search categories
+- 🗑️ Deactivate categories without permanently deleting their records
+- ♻️ Restore inactive categories
+
+### 👥 User Management
+- 🔐 Authentication and password hashing with BCrypt
+- 🛡️ Admin and Cashier roles
+- ✅ User account activation and deactivation
+- 🔎 Username validation and database uniqueness constraint
+
+### 🧾 Order Management
+- 📋 View sales history
+- 📅 Filter orders by date
+- 💵 Filter by payment method
+- 🔍 Search orders by ID
+- 📄 View order details
+
+### 📈 Reports & Analytics
+- 💰 Sales summaries and revenue analysis
+- 📊 Daily revenue trends
+- 🏆 Best-selling products
+- 💳 Payment-method analysis
+- 📤 Export reports to CSV
+
+### 🖨️ Receipt Printing
+- 🧾 Printable receipt preview
+- ☕ Custom café name and address
+- 📞 Café contact information
+- 💬 Custom receipt footer
+- 👤 Cashier and order information
+
+### ⚙️ Settings
+- 🏪 Configure café information
+- 📝 Customize receipt footer
+- 📦 Configure the low-stock threshold
+
+---
+
+## 🧱 Architecture
+
+The solution is organized into three main layers to separate responsibilities and improve maintainability.
 
 ```text
-CoffeSystem_1UI
-       |
-       v
-CoffeSystem_Business
-       |
-       v
-CoffeSystem_DataAccess
-       |
-       v
-SQL Server
+☕ Coffee Shop Management System
+│
+├── 🖥️ CoffeSystem_1UI
+│   └── Windows Forms — User Interface
+│
+├── 🧠 CoffeSystem_Business
+│   └── Services — Business Logic
+│
+└── 🗄️ CoffeSystem_DataAccess
+    ├── Entities
+    ├── Repositories
+    ├── AppDbContext
+    ├── DTOs
+    └── EF Core Migrations
+             │
+             ▼
+       🗃️ SQL Server
 ```
 
-- **UI Layer:** Windows Forms and user interactions.
-- **Business Layer:** Services and business rules.
-- **Data Access Layer:** Entities, repositories, EF Core, and database operations.
+### 🔄 Application Flow
 
-## Setup
+`User Interface → Business Services → Repositories → Entity Framework Core → SQL Server`
 
-1. Clone or download the repository.
-2. Open the solution file in Visual Studio.
-3. Review `appsettings.example.json` and create a local `appsettings.json` in the startup project.
-4. Configure the SQL Server connection string for your environment.
-5. Restore NuGet packages and apply the existing EF Core migrations.
-6. Build and run the Windows Forms application.
+---
 
-Do not commit local connection strings, credentials, or real database files.
+## 🛠️ Tech Stack
 
-## Author
+| Technology | Purpose |
+|---|---|
+| 💻 C# | Application development |
+| ⚙️ .NET 8 | Application framework |
+| 🪟 Windows Forms | Desktop user interface |
+| 🗄️ Microsoft SQL Server | Relational database |
+| 🔗 Entity Framework Core 8 | ORM and database access |
+| 🧩 LINQ | Data querying and filtering |
+| ⚡ Async / Await | Non-blocking database operations |
+| 🔒 BCrypt | Password hashing |
+| 🧬 Git & GitHub | Version control |
+
+---
+
+## 🛡️ Engineering Highlights
+
+- 🏗️ **Layered Architecture** — separation of UI, business logic, and data access.
+- ⚡ **Asynchronous Data Access** — EF Core async queries and save operations.
+- 🔄 **Transactional Checkout** — order creation and stock updates handled in a database transaction.
+- ↩️ **Rollback Handling** — failed checkout operations can roll back database changes.
+- 🔐 **Password Security** — BCrypt password hashing.
+- ✅ **Data Integrity** — unique username constraint and validation rules.
+- ♻️ **Soft Delete** — products and categories can be restored.
+- 🧾 **DTO-Based Reporting** — structured report data for summaries and analytics.
+
+---
+
+## 🚀 Getting Started
+
+### 📋 Prerequisites
+
+Make sure you have:
+
+- 💻 Visual Studio with .NET desktop development support
+- ⚙️ .NET 8 SDK
+- 🗃️ Microsoft SQL Server
+- 🔧 Entity Framework Core tooling
+
+### ⚡ Installation
+
+1. 📥 Clone or download this repository.
+2. 📂 Open the solution file (`.sln`) in Visual Studio.
+3. 📦 Restore the required NuGet packages.
+4. ⚙️ Create a local `appsettings.json` using `appsettings.example.json` as a template, and configure your SQL Server connection string.
+5. 🗄️ Apply the existing Entity Framework Core migrations to your database.
+6. 🏗️ Build the solution.
+7. ▶️ Run the Windows Forms startup project.
+
+🔒 **Security note:** Keep local connection strings, credentials, and real database files out of version control.
+
+---
+
+## 🖼️ Screenshots
+
+📸 Screenshots of the dashboard, POS, product management, reports, and receipt preview can be added here to showcase the application's interface.
+
+---
+
+## 🎯 Project Goals
+
+This project was developed to strengthen practical skills in:
+
+- 💻 C# and .NET application development
+- 🧱 Layered software architecture
+- 🗄️ Relational database design
+- ⚡ Asynchronous programming
+- 🔐 Authentication and access control
+- 📊 Reporting and data analysis
+- 🛒 Real-world business workflows
+
+---
+
+## 👨‍💻 Author
 
 **Anis Chaabouni**
 
-Junior .NET / Full-Stack Developer
+🎓 Junior .NET / Full-Stack Developer  
+📍 Tunisia
+
+---
+
+⭐ *Built with ☕, C#, and a passion for software development.*
+
