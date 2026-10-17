@@ -167,6 +167,21 @@ Make sure you have:
 ![Coffee System login](login.png)
 ![Coffee System Dashboard](Dashboard.png)
 ![Coffee System Pos](Pos.png)
+![Coffee System Pos](Pos2.png)
+![Coffee System Pos](Pos3.png)
+![Coffee System Pos](Pos4.png)
+![Coffee System Product](Products.png)
+![Coffee System AddProducts](AddProduct.png)
+![Coffee System InactiveProduct](InactiveProduct.png)
+![Coffee System EditProduct](EditProduct.png)
+![Coffee System Categories](Categories.png)
+![Coffee System AddCategorie](AddCategorie.png)
+![Coffee System EditCategory](EditCategory.png)
+![Coffee System InactiveCategories](InactiveCategories.png)
+
+
+
+
 
 
 
