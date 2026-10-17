@@ -178,6 +178,15 @@ Make sure you have:
 ![Coffee System AddCategorie](AddCategorie.png)
 ![Coffee System EditCategory](EditCategory.png)
 ![Coffee System InactiveCategories](InactiveCategories.png)
+![Coffee System Orders](orders.png)
+![Coffee System PrintOrder](PrintOrder.png)
+![Coffee System Reports](Reports.png)
+![Coffee System Users](Users.png)
+![Coffee System AddUsers](AddUser.png)
+![Coffee System InactiveUser](InactiveUser.png)
+![Coffee System EditUser](EditUser.png)
+
+
 
 
 
