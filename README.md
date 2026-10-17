@@ -165,6 +165,8 @@ Make sure you have:
 
 📸 Screenshots of the dashboard, POS, product management, reports, and receipt preview can be added here to showcase the application's interface.
 ![Coffee System login](login.png)
+![Coffee System Dashboard](Dashboard.png)
+
 
 
 ---
